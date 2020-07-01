@@ -2,7 +2,7 @@ const express = require('express');
 const morgan = require('morgan');
 const app = express();
 const cors = require('cors');
-const pool = require('./db'); 
+const pool = require('./db');
 const path = require("path");
 const PORT = process.env.PORT || 5000;
 
@@ -29,7 +29,7 @@ if (process.env.NODE_ENV === "production") {
 app.get('/blogs', async (req, res) => {
     try {
         const allBlogs = await pool.query("SELECT * FROM blog");
-        
+
         res.json(allBlogs.rows);
     } catch (err) {
         console.error(err.message);
@@ -65,7 +65,7 @@ app.post('/blogs', async (req, res) => {
 app.delete('/blogs/:id', async (req, res) => {
     try {
         const { id } = req.params;
-        const deleteBlog = await pool.query ("DELETE FROM blog WHERE blog_id = $1", [id]);
+        const deleteBlog = await pool.query("DELETE FROM blog WHERE blog_id = $1", [id]);
         res.json("Blog was deleted");
     } catch (err) {
         console.error(err.message);
