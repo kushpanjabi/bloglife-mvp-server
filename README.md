@@ -15,6 +15,23 @@ http://bloglife-dep.herokuapp.com/
 ![Screenshot of Landing Page](./screenshots/ss-lp.png)
 ![Screenshot of App Page](./screenshots/ss-app.png)
 
+### API Endpoints
+
+#### Get all blogs
+Request
+GET /blogs
+
+#### Get a blog by ID
+Request
+GET /blogs/:id
+
+#### Create a new blog
+Request
+POST /blogs
+
+#### Delete a blog by ID
+Request
+DELETE /blogs/:id
 
 ### Technologies Used
 HTML, CSS, React, Express, Node, PostgreSQL
