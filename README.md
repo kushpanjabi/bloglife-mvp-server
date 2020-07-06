@@ -1,6 +1,6 @@
 # BlogLife App
 
-### App Overview
+## App Overview
 Have you ever found yourself wondering- "what did I even do yesterday?" I definitely have. I wanted to build this application so that people can take a pause in their daily life every evening, and reflect on their day. What did you get done? What did you want to get done, but couldn't get around to? What did you eat? Did you get the workout you wanted to in? Answering these types of questions every evening helps you hold yourself accountable to the tasks you wish to accomplish daily. Try it!
 
 3 main benefits you achieve with this app: 
@@ -8,30 +8,30 @@ Have you ever found yourself wondering- "what did I even do yesterday?" I defini
 * Productivity: By exercising your mind in tracing most of your daily activities, your memory and focus in the present moment sharpens.
 * Reflection: Having your past entries available to you allows you to reflect and note progress, or note where you would like to make changes in your life.
 
-### Live App
+## Live App
 http://bloglife-dep.herokuapp.com/
 
-### Screenshots of App
+## Screenshots of App
 ![Screenshot of Landing Page](./screenshots/ss-lp.png)
 ![Screenshot of App Page](./screenshots/ss-app.png)
 
-### API Endpoints
+## API Endpoints
 
-#### Get all blogs
+### Get all blogs
 Request
 GET /blogs
 
-#### Get a blog by ID
+### Get a blog by ID
 Request
 GET /blogs/:id
 
-#### Create a new blog
+### Create a new blog
 Request
 POST /blogs
 
-#### Delete a blog by ID
+### Delete a blog by ID
 Request
 DELETE /blogs/:id
 
-### Technologies Used
+## Technologies Used
 HTML, CSS, React, Express, Node, PostgreSQL
